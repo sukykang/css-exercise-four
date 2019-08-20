@@ -1,4 +1,88 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 16px;
+  font-family: serif;
+}
+
+div {
+  width: 100%;
+  margin: 1% 0;
+  float: left;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit; cover;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 0;
+}
+
+.img-overlay-text {
+  left: 20px;
+  top: 30px;
+  position: absolute;
+  font-size: 1.5em;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.preview {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, sans-serif;
+  letter-spacing: 5px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 574px) {
+  .preview {
+    max-width: 574px;
+    object-fit: fill;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  div {
+    margin: 1%;
+    width: 48%;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .preview {
+    font-size: .8em;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  div {
+    margin: 1%;
+    width: 23%;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+  }
 }
